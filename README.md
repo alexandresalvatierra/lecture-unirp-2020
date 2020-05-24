@@ -1,4 +1,4 @@
-# lecture-unirp-2020
+# UNIRP University - Lecture 2020
 
 
 I have no words to explain how happy I am to have spoken to you with over a hundred students about machine learning.
