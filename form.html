@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check pricing for rent</title>
+  <style>
+    body{
+      margin: 80px;
+    }
+    form > *{
+      font-size: 20px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <form action="get_price" method="post">
+    <label for="area">Area</label>
+    <input type="number" name="area" id="area">
+    <br>
+    <label for="rooms">Rooms</label>
+    <input type="number" name="rooms" id="rooms">
+    <br>
+    <label for="bathroom">Bathroom</label>
+    <input type="number" name="bathroom" id="bathroom">
+    <br>
+    <label for="parking_spaces">Parking Spaces</label>
+    <input type="number" name="parking_spaces" id="parking_spaces">
+    <br>
+    <label for="floor">Floor</label>
+    <input type="number" name="floor" id="floor">
+    <br>
+    <span>Accept animal</span>
+    <label for="accept_animal_yes">Yes</label>
+    <input type="radio" name="accept_animal" id="accept_animal_yes" value="1">
+    <label for="accept_animal_no">No</label>
+    <input type="radio" name="accept_animal" id="accept_animal_no" value="0">
+    <br>
+    <span>Furnished</span>
+    <label for="furnished_yes">Yes</label>
+    <input type="radio" name="furnished" id="furnished_yes" value="1">
+    <label for="furnished_no">No</label>
+    <input type="radio" name="furnished" id="furnished_no" value="0">
+    <br>
+    <label for="rent_amount">Rent Amount</label>
+    <input type="number" name="rent_amount" id="rent_amount">
+    <br>
+    <label for="property_tax">Property Tax</label>
+    <input type="number" name="property_tax" id="property_tax">
+    <br>
+    <input type="submit" value="Get Price">
+  </form>
+  <h1>{{ price }}</h1>
+</body>
+</html>
