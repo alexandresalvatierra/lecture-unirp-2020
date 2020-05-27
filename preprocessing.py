@@ -1,11 +1,11 @@
-import pathlib
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sb
+from pathlib import Path
 from tabulate import tabulate as tb
 from datetime import datetime
 
-file_path = str( pathlib.Path().absolute() ) + '/dataset/'
+file_path = str( Path(__file__).parent.absolute() ) + '/dataset/'
 file_name = 'houses_to_rent_v2.csv'
 
 # read external csv

@@ -1,5 +1,5 @@
-import pathlib
 import pandas as pd
+from pathlib import Path
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.ensemble import GradientBoostingRegressor
@@ -7,8 +7,8 @@ from sklearn.model_selection import train_test_split
 import joblib as jbl
 
 # load dataset
-file_path = str( pathlib.Path().absolute() ) + '/dataset/'
-file_name = 'PP-2020-05-21-22-24-29-houses_to_rent_v2.csv'
+file_path = str( Path(__file__).parent.absolute() ) + '/dataset/'
+file_name = 'PP-2020-05-27-16-51-58-houses_to_rent_v2.csv'
 
 df = pd.read_csv( file_path + file_name )
 
